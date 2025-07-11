@@ -193,16 +193,101 @@ dependencies {
 - **PMD**: Edit `config/pmd/ruleset.xml`
 - **SpotBugs**: Edit `config/spotbugs/exclude.xml`
 
-## 📋 Template Checklist
+## 📋 Template Usage Guide
 
-When using this template, update:
+### Files to Keep (Template Infrastructure)
 
-- [ ] Project name in `settings.gradle.kts`
-- [ ] Package names in source files
-- [ ] Main class name and package in `build.gradle.kts`
-- [ ] Repository name and description in this README
-- [ ] License information (if applicable)
-- [ ] Author information in source files
+**Keep these files unchanged** - they provide the template's core functionality:
+
+```text
+📁 Configuration & Build
+├── build.gradle.kts                 ✅ Keep (modify project details only)
+├── settings.gradle.kts              ✅ Keep (update project name)
+├── gradle.properties                ✅ Keep (corporate network settings)
+├── gradlew / gradlew.bat            ✅ Keep (Gradle wrapper)
+├── gradlew-corporate.*              ✅ Keep (corporate network scripts)
+└── gradle/wrapper/                  ✅ Keep (Gradle wrapper files)
+
+📁 Code Quality & CI/CD
+├── .github/workflows/ci.yml         ✅ Keep (CI/CD pipeline)
+├── .github/copilot-instructions.md  ✅ Keep (GitHub Copilot config)
+├── config/checkstyle/               ✅ Keep (code quality rules)
+├── config/pmd/                      ✅ Keep (static analysis)
+├── config/spotbugs/                 ✅ Keep (bug detection)
+└── .gitignore                       ✅ Keep (Git ignore rules)
+
+📁 Documentation
+├── CORPORATE-NETWORK-GUIDE.md       ✅ Keep (troubleshooting guide)
+├── SETUP.md                         ✅ Keep (setup instructions)
+├── setup-corporate-network.*        ✅ Keep (network setup scripts)
+└── LICENSE                          ✅ Keep (or update for your license)
+```
+
+### Files to Customize (Your Project Content)
+
+**Modify these files** to match your specific project:
+
+```text
+📁 Source Code - CUSTOMIZE
+├── src/main/java/com/example/gradle/
+│   └── App.java                     🔄 Replace with your main class
+├── src/test/java/com/example/gradle/
+│   └── AppTest.java                 🔄 Replace with your tests
+└── src/main/resources/
+    └── logback.xml                  🔄 Keep (modify logging config if needed)
+
+📁 Documentation - CUSTOMIZE
+├── README.md                        🔄 Update for your project
+└── .github/template-repository.json 🔄 Update template metadata
+```
+
+### Files to Remove (Template-Specific)
+
+**Delete these files** after creating your project from the template:
+
+```text
+📁 Template Cleanup - REMOVE
+└── .github/template-cleanup/
+    └── README.md                    ❌ Remove (template instructions only)
+```
+
+### Template Checklist
+
+When using this template:
+
+#### Step 1: Project Configuration
+
+- [ ] Update project name in `settings.gradle.kts`
+- [ ] Modify `build.gradle.kts` application details:
+  - [ ] Change `application.mainClass` from `"com.example.gradle.App"`
+  - [ ] Update group name from `"com.example"`
+- [ ] Update repository name and description in this README
+
+#### Step 2: Source Code
+
+- [ ] Replace `src/main/java/com/example/gradle/` with your package structure
+- [ ] Create your main application class (replace `App.java`)
+- [ ] Replace example tests with your actual tests
+- [ ] Update package imports throughout the codebase
+
+#### Step 3: Documentation
+
+- [ ] Customize this README for your project
+- [ ] Update `SETUP.md` if you have specific setup requirements
+- [ ] Modify `.github/template-repository.json` if creating another template
+- [ ] Update author information and license if needed
+
+#### Step 4: Template Cleanup
+
+- [ ] Delete `.github/template-cleanup/` directory
+- [ ] Remove template-specific sections from README
+- [ ] Commit your customized project
+
+#### Step 5: Corporate Network (if applicable)
+
+- [ ] Test corporate network setup scripts work in your environment
+- [ ] Verify `gradle.properties` settings match your network requirements
+- [ ] Update `CORPORATE-NETWORK-GUIDE.md` with environment-specific details
 
 ## 🤝 Contributing
 
