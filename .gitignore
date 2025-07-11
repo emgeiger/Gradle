@@ -1,0 +1,54 @@
+# Logs
+*.log
+
+# Gradle
+.gradle/
+build/
+gradle-app.setting
+!gradle-wrapper.jar
+!gradle-wrapper.properties
+gradlew
+gradlew.bat
+
+# IDE
+.idea/
+*.iml
+*.ipr
+*.iws
+.vscode/
+.settings/
+.project
+.classpath
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Java
+*.class
+*.jar
+*.war
+*.ear
+hs_err_pid*
+
+# Test reports
+/build/reports/
+/build/test-results/
+
+# Coverage reports
+/build/jacoco/
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.swp
+*~.nib
+
+# Package Files
+*.tar.gz
+*.zip
+
+# Virtual machine crash logs
+# See http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
+hs_err_pid*

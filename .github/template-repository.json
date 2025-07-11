@@ -1,0 +1,17 @@
+{
+  "name": "Gradle Boilerplate for Java/Kotlin",
+  "description": "A comprehensive Gradle boilerplate template with modern development practices, testing frameworks, code quality tools, and CI/CD integration for Java/Kotlin projects.",
+  "homepageUrl": "https://github.com/",
+  "previewImageUrl": "https://raw.githubusercontent.com/gradle/gradle/HEAD/media/gradle-logo.png",
+  "labels": [
+    "gradle",
+    "java",
+    "kotlin",
+    "junit",
+    "ci-cd",
+    "template",
+    "boilerplate",
+    "testing",
+    "code-quality"
+  ]
+}
