@@ -4,7 +4,7 @@ A comprehensive Gradle boilerplate template for Java/Kotlin projects with modern
 
 ## 🚀 Features
 
-- **Modern Gradle Setup**: Kotlin DSL configuration with Gradle 8.5
+- **Modern Gradle Setup**: Kotlin DSL configuration with Gradle 8.11.1
 - **Java 17+ Support**: Compatible with Java 17 and 21
 - **Kotlin Integration**: Ready for mixed Java/Kotlin projects
 - **Testing Framework**: JUnit 5, AssertJ, and Mockito
@@ -61,7 +61,7 @@ A comprehensive Gradle boilerplate template for Java/Kotlin projects with modern
    setup-corporate-network.bat
    ```
 
-2. **Manual alternative**: Download Gradle manually from <https://services.gradle.org/distributions/gradle-8.5-bin.zip> and extract to the project directory.
+2. **Manual alternative**: Download Gradle manually from <https://services.gradle.org/distributions/gradle-8.11.1-all.zip> and extract to the project directory.
 
 3. **Complete guide**: See [CORPORATE-NETWORK-GUIDE.md](CORPORATE-NETWORK-GUIDE.md) for detailed troubleshooting.
 

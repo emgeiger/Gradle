@@ -22,6 +22,17 @@ repositories {
     mavenCentral()
 }
 
+// Dependency resolution strategy to handle conflicts
+configurations.all {
+    resolutionStrategy {
+        // Force specific versions to resolve conflicts
+        force("com.google.guava:guava:33.0.0-jre")
+        
+        // Exclude problematic dependencies
+        exclude(group = "com.google.collections", module = "google-collections")
+    }
+}
+
 dependencies {
     // Use JUnit Jupiter for testing
     testImplementation("org.junit.jupiter:junit-jupiter:5.10.1")
@@ -39,7 +50,7 @@ dependencies {
     
     // Common utilities
     implementation("org.apache.commons:commons-lang3:3.14.0")
-    implementation("com.google.guava:guava:32.1.3-jre")
+    implementation("com.google.guava:guava:33.0.0-jre")
     
     // Logging
     implementation("ch.qos.logback:logback-classic:1.4.14")
@@ -98,14 +109,14 @@ tasks.jacocoTestCoverageVerification {
 
 // Checkstyle configuration
 checkstyle {
-    toolVersion = "10.12.7"
+    toolVersion = "10.18.2"
     configFile = file("config/checkstyle/checkstyle.xml")
     isIgnoreFailures = false
 }
 
 // PMD configuration
 pmd {
-    toolVersion = "7.0.0"
+    toolVersion = "7.7.0"
     isConsoleOutput = true
     ruleSetFiles = files("config/pmd/ruleset.xml")
     ruleSets = listOf() // Clear default rule sets
@@ -113,7 +124,7 @@ pmd {
 
 // SpotBugs configuration
 spotbugs {
-    toolVersion = "4.8.3"
+    toolVersion = "4.8.6"
     effort = com.github.spotbugs.snom.Effort.MAX
     reportLevel = com.github.spotbugs.snom.Confidence.LOW
     excludeFilter = file("config/spotbugs/exclude.xml")

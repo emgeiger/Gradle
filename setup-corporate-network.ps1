@@ -35,9 +35,9 @@ catch {
 
 # Method 2: Manual Gradle download
 Write-Host "`n📦 Method 2: Manual Gradle download..." -ForegroundColor Green
-$gradleUrl = "https://services.gradle.org/distributions/gradle-8.5-bin.zip"
-$gradleZip = "gradle-8.5-bin.zip"
-$gradleDir = "gradle-8.5"
+$gradleUrl = "https://services.gradle.org/distributions/gradle-8.11.1-all.zip"
+$gradleZip = "gradle-8.11.1-all.zip"
+$gradleDir = "gradle-8.11.1"
 
 if (Test-Path $gradleZip) {
     Write-Host "✅ Gradle zip already exists, skipping download" -ForegroundColor Yellow

@@ -45,10 +45,10 @@ if errorlevel 1 (
     echo ❌ Method 1 failed. Manual Gradle download required.
     echo.
     echo 📋 Manual Steps Required:
-    echo    1. Download Gradle 8.5 manually from:
-    echo       https://services.gradle.org/distributions/gradle-8.5-bin.zip
-    echo    2. Extract to a 'gradle-8.5' folder in this directory
-    echo    3. Run: gradle-8.5\bin\gradle.bat build
+    echo    1. Download Gradle 8.11.1 manually from:
+    echo       https://services.gradle.org/distributions/gradle-8.11.1-all.zip
+    echo    2. Extract to a 'gradle-8.11.1' folder in this directory
+    echo    3. Run: gradle-8.11.1\bin\gradle.bat build
     echo.
     echo 🔧 Alternative Solutions:
     echo    1. Contact IT for corporate certificates

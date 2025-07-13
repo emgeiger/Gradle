@@ -92,9 +92,9 @@ If Gradle wrapper can't download automatically:
 
 #### Manual Download Method
 
-1. Download from: <https://services.gradle.org/distributions/gradle-8.5-bin.zip>
-2. Extract to project directory as `gradle-8.5/`
-3. Run: `gradle-8.5\bin\gradle.bat build`
+1. Download from: <https://services.gradle.org/distributions/gradle-8.11.1-all.zip>
+2. Extract to project directory as `gradle-8.11.1/`
+3. Run: `gradle-8.11.1\bin\gradle.bat build`
 
 #### Use Corporate Repository
 
@@ -150,7 +150,7 @@ ping gradle.org
 nslookup services.gradle.org
 
 # Test HTTPS connectivity
-curl -I https://services.gradle.org/distributions/gradle-8.5-bin.zip
+curl -I https://services.gradle.org/distributions/gradle-8.11.1-all.zip
 ```
 
 ### Check Proxy Settings
